@@ -29,7 +29,10 @@ namespace Learn_0801_24
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             shareFunction._panelMenu = this.panelMenu;
         }
-
+        /// <summary>
+        /// //////////////////////
+        /// </summary>///////
+        /// <returns></returns>
         private Color SelectThemeColor()
         {
             int index = random.Next(ThemeColor.ColorList.Count);
