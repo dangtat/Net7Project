@@ -66,6 +66,9 @@ namespace Learn_0801_24
                 }
             }
         }
+        /// <summary>
+        /// ///////////////////////////////gv
+        /// </summary>
         public void DisableButton()
         {
             foreach (Control previousBtn in panelMenu.Controls)
