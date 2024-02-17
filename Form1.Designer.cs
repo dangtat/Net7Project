@@ -77,12 +77,13 @@ namespace Learn_0801_24
             // button1
             // 
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(2)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
             this.button1.Image = global::Learn_0801_24.Properties.Resources.Hand;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 260);
+            this.button1.Location = new System.Drawing.Point(0, 254);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(11);
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -96,12 +97,13 @@ namespace Learn_0801_24
             // btnHome
             // 
             this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnHome.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(2)))));
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnHome.Image = global::Learn_0801_24.Properties.Resources._2;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 566);
+            this.btnHome.Location = new System.Drawing.Point(0, 554);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(11);
             this.btnHome.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -115,12 +117,13 @@ namespace Learn_0801_24
             // btnIO
             // 
             this.btnIO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnIO.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(2)))));
             this.btnIO.FlatAppearance.BorderSize = 0;
             this.btnIO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIO.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnIO.Image = global::Learn_0801_24.Properties.Resources.I_o;
             this.btnIO.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIO.Location = new System.Drawing.Point(0, 506);
+            this.btnIO.Location = new System.Drawing.Point(0, 494);
             this.btnIO.Name = "btnIO";
             this.btnIO.Padding = new System.Windows.Forms.Padding(11);
             this.btnIO.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -134,12 +137,13 @@ namespace Learn_0801_24
             // btnData
             // 
             this.btnData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnData.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(2)))));
             this.btnData.FlatAppearance.BorderSize = 0;
             this.btnData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnData.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnData.Image = global::Learn_0801_24.Properties.Resources.Data;
             this.btnData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnData.Location = new System.Drawing.Point(0, 446);
+            this.btnData.Location = new System.Drawing.Point(0, 434);
             this.btnData.Name = "btnData";
             this.btnData.Padding = new System.Windows.Forms.Padding(11);
             this.btnData.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -153,12 +157,13 @@ namespace Learn_0801_24
             // btnSetting
             // 
             this.btnSetting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSetting.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(2)))));
             this.btnSetting.FlatAppearance.BorderSize = 0;
             this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSetting.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSetting.Image = global::Learn_0801_24.Properties.Resources.Setting;
             this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetting.Location = new System.Drawing.Point(0, 386);
+            this.btnSetting.Location = new System.Drawing.Point(0, 374);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Padding = new System.Windows.Forms.Padding(11);
             this.btnSetting.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -172,12 +177,13 @@ namespace Learn_0801_24
             // btnAlarm
             // 
             this.btnAlarm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAlarm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(2)))));
             this.btnAlarm.FlatAppearance.BorderSize = 0;
             this.btnAlarm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlarm.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnAlarm.Image = global::Learn_0801_24.Properties.Resources.Alarm;
             this.btnAlarm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlarm.Location = new System.Drawing.Point(0, 326);
+            this.btnAlarm.Location = new System.Drawing.Point(0, 314);
             this.btnAlarm.Name = "btnAlarm";
             this.btnAlarm.Padding = new System.Windows.Forms.Padding(11);
             this.btnAlarm.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -191,6 +197,7 @@ namespace Learn_0801_24
             // btnManual
             // 
             this.btnManual.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnManual.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(2)))));
             this.btnManual.FlatAppearance.BorderSize = 0;
             this.btnManual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManual.ForeColor = System.Drawing.Color.Gainsboro;
@@ -210,6 +217,7 @@ namespace Learn_0801_24
             // btnMainScreen
             // 
             this.btnMainScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnMainScreen.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(2)))));
             this.btnMainScreen.FlatAppearance.BorderSize = 0;
             this.btnMainScreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMainScreen.ForeColor = System.Drawing.Color.Gainsboro;
@@ -357,6 +365,7 @@ namespace Learn_0801_24
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Screw Capper Machine";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMenu.ResumeLayout(false);

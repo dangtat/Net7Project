@@ -48,16 +48,20 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.sButton10 = new Styling_Toggle_Button.SButton();
-            this.sButton9 = new Styling_Toggle_Button.SButton();
-            this.sButton8 = new Styling_Toggle_Button.SButton();
-            this.sButton1 = new Styling_Toggle_Button.SButton();
-            this.sButton3 = new Styling_Toggle_Button.SButton();
-            this.sButton5 = new Styling_Toggle_Button.SButton();
-            this.sButton6 = new Styling_Toggle_Button.SButton();
-            this.sButton7 = new Styling_Toggle_Button.SButton();
-            this.sButton2 = new Styling_Toggle_Button.SButton();
-            this.sButton4 = new Styling_Toggle_Button.SButton();
+            this.sBtnRunRotary = new Styling_Toggle_Button.SButton();
+            this.sBtnCYLRejectBottle = new Styling_Toggle_Button.SButton();
+            this.sBtnCYLPressCapper = new Styling_Toggle_Button.SButton();
+            this.sBtnCYLPos2 = new Styling_Toggle_Button.SButton();
+            this.sBtnCYLKeepCapper = new Styling_Toggle_Button.SButton();
+            this.sBtnCYLPos3 = new Styling_Toggle_Button.SButton();
+            this.sBtnKeepBottle = new Styling_Toggle_Button.SButton();
+            this.sBtnCYLPos1 = new Styling_Toggle_Button.SButton();
+            this.sBtnRunConv = new Styling_Toggle_Button.SButton();
+            this.sBtnCYLBlockBottle = new Styling_Toggle_Button.SButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -74,11 +78,13 @@
             // 
             this.panel2.AutoSize = true;
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.sButton2);
-            this.panel2.Location = new System.Drawing.Point(178, 28);
+            this.panel2.Controls.Add(this.sBtnRunConv);
+            this.panel2.Location = new System.Drawing.Point(178, 16);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(337, 72);
+            this.panel2.Size = new System.Drawing.Size(337, 99);
             this.panel2.TabIndex = 3;
             // 
             // label2
@@ -96,8 +102,8 @@
             this.panel3.AutoSize = true;
             this.panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.sButton3);
-            this.panel3.Location = new System.Drawing.Point(21, 283);
+            this.panel3.Controls.Add(this.sBtnCYLKeepCapper);
+            this.panel3.Location = new System.Drawing.Point(21, 296);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(337, 72);
             this.panel3.TabIndex = 5;
@@ -117,7 +123,7 @@
             this.panel4.AutoSize = true;
             this.panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.sButton4);
+            this.panel4.Controls.Add(this.sBtnCYLBlockBottle);
             this.panel4.Location = new System.Drawing.Point(178, 540);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(337, 72);
@@ -138,8 +144,8 @@
             this.panel6.AutoSize = true;
             this.panel6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel6.Controls.Add(this.label6);
-            this.panel6.Controls.Add(this.sButton6);
-            this.panel6.Location = new System.Drawing.Point(21, 408);
+            this.panel6.Controls.Add(this.sBtnKeepBottle);
+            this.panel6.Location = new System.Drawing.Point(21, 421);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(337, 72);
             this.panel6.TabIndex = 4;
@@ -159,8 +165,8 @@
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.sButton1);
-            this.panel1.Location = new System.Drawing.Point(743, 283);
+            this.panel1.Controls.Add(this.sBtnCYLPos2);
+            this.panel1.Location = new System.Drawing.Point(743, 296);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(337, 72);
             this.panel1.TabIndex = 8;
@@ -180,8 +186,8 @@
             this.panel5.AutoSize = true;
             this.panel5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Controls.Add(this.sButton5);
-            this.panel5.Location = new System.Drawing.Point(743, 408);
+            this.panel5.Controls.Add(this.sBtnCYLPos3);
+            this.panel5.Location = new System.Drawing.Point(743, 421);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(337, 72);
             this.panel5.TabIndex = 6;
@@ -201,8 +207,8 @@
             this.panel7.AutoSize = true;
             this.panel7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Controls.Add(this.sButton7);
-            this.panel7.Location = new System.Drawing.Point(743, 152);
+            this.panel7.Controls.Add(this.sBtnCYLPos1);
+            this.panel7.Location = new System.Drawing.Point(743, 165);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(337, 72);
             this.panel7.TabIndex = 7;
@@ -222,8 +228,8 @@
             this.panel8.AutoSize = true;
             this.panel8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel8.Controls.Add(this.label8);
-            this.panel8.Controls.Add(this.sButton8);
-            this.panel8.Location = new System.Drawing.Point(21, 152);
+            this.panel8.Controls.Add(this.sBtnCYLPressCapper);
+            this.panel8.Location = new System.Drawing.Point(21, 165);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(337, 72);
             this.panel8.TabIndex = 4;
@@ -243,7 +249,7 @@
             this.panel9.AutoSize = true;
             this.panel9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel9.Controls.Add(this.label9);
-            this.panel9.Controls.Add(this.sButton9);
+            this.panel9.Controls.Add(this.sBtnCYLRejectBottle);
             this.panel9.Location = new System.Drawing.Point(621, 540);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(337, 72);
@@ -263,11 +269,13 @@
             // 
             this.panel10.AutoSize = true;
             this.panel10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel10.Controls.Add(this.label12);
             this.panel10.Controls.Add(this.label10);
-            this.panel10.Controls.Add(this.sButton10);
-            this.panel10.Location = new System.Drawing.Point(621, 28);
+            this.panel10.Controls.Add(this.textBox2);
+            this.panel10.Controls.Add(this.sBtnRunRotary);
+            this.panel10.Location = new System.Drawing.Point(621, 16);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(337, 72);
+            this.panel10.Size = new System.Drawing.Size(337, 99);
             this.panel10.TabIndex = 4;
             // 
             // label10
@@ -280,142 +288,183 @@
             this.label10.TabIndex = 1;
             this.label10.Text = "RUN ROTARY";
             // 
-            // sButton10
+            // sBtnRunRotary
             // 
-            this.sButton10.Location = new System.Drawing.Point(240, 19);
-            this.sButton10.MinimumSize = new System.Drawing.Size(45, 22);
-            this.sButton10.Name = "sButton10";
-            this.sButton10.OffBackColor = System.Drawing.Color.Gray;
-            this.sButton10.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.sButton10.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
-            this.sButton10.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.sButton10.Size = new System.Drawing.Size(83, 38);
-            this.sButton10.TabIndex = 0;
-            this.sButton10.UseVisualStyleBackColor = true;
+            this.sBtnRunRotary.Location = new System.Drawing.Point(240, 19);
+            this.sBtnRunRotary.MinimumSize = new System.Drawing.Size(45, 22);
+            this.sBtnRunRotary.Name = "sBtnRunRotary";
+            this.sBtnRunRotary.OffBackColor = System.Drawing.Color.Gray;
+            this.sBtnRunRotary.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.sBtnRunRotary.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
+            this.sBtnRunRotary.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.sBtnRunRotary.Size = new System.Drawing.Size(83, 38);
+            this.sBtnRunRotary.TabIndex = 0;
+            this.sBtnRunRotary.UseVisualStyleBackColor = true;
+            this.sBtnRunRotary.CheckedChanged += new System.EventHandler(this.sBtnRunRotary_CheckedChanged);
             // 
-            // sButton9
+            // sBtnCYLRejectBottle
             // 
-            this.sButton9.Location = new System.Drawing.Point(240, 19);
-            this.sButton9.MinimumSize = new System.Drawing.Size(45, 22);
-            this.sButton9.Name = "sButton9";
-            this.sButton9.OffBackColor = System.Drawing.Color.Gray;
-            this.sButton9.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.sButton9.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
-            this.sButton9.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.sButton9.Size = new System.Drawing.Size(83, 38);
-            this.sButton9.TabIndex = 0;
-            this.sButton9.UseVisualStyleBackColor = true;
+            this.sBtnCYLRejectBottle.Location = new System.Drawing.Point(240, 19);
+            this.sBtnCYLRejectBottle.MinimumSize = new System.Drawing.Size(45, 22);
+            this.sBtnCYLRejectBottle.Name = "sBtnCYLRejectBottle";
+            this.sBtnCYLRejectBottle.OffBackColor = System.Drawing.Color.Gray;
+            this.sBtnCYLRejectBottle.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.sBtnCYLRejectBottle.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
+            this.sBtnCYLRejectBottle.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.sBtnCYLRejectBottle.Size = new System.Drawing.Size(83, 38);
+            this.sBtnCYLRejectBottle.TabIndex = 0;
+            this.sBtnCYLRejectBottle.UseVisualStyleBackColor = true;
             // 
-            // sButton8
+            // sBtnCYLPressCapper
             // 
-            this.sButton8.Location = new System.Drawing.Point(240, 19);
-            this.sButton8.MinimumSize = new System.Drawing.Size(45, 22);
-            this.sButton8.Name = "sButton8";
-            this.sButton8.OffBackColor = System.Drawing.Color.Gray;
-            this.sButton8.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.sButton8.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
-            this.sButton8.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.sButton8.Size = new System.Drawing.Size(83, 38);
-            this.sButton8.TabIndex = 0;
-            this.sButton8.UseVisualStyleBackColor = true;
+            this.sBtnCYLPressCapper.Location = new System.Drawing.Point(240, 19);
+            this.sBtnCYLPressCapper.MinimumSize = new System.Drawing.Size(45, 22);
+            this.sBtnCYLPressCapper.Name = "sBtnCYLPressCapper";
+            this.sBtnCYLPressCapper.OffBackColor = System.Drawing.Color.Gray;
+            this.sBtnCYLPressCapper.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.sBtnCYLPressCapper.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
+            this.sBtnCYLPressCapper.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.sBtnCYLPressCapper.Size = new System.Drawing.Size(83, 38);
+            this.sBtnCYLPressCapper.TabIndex = 0;
+            this.sBtnCYLPressCapper.UseVisualStyleBackColor = true;
+            this.sBtnCYLPressCapper.CheckedChanged += new System.EventHandler(this.sBtnCYLPressCapper_CheckedChanged);
             // 
-            // sButton1
+            // sBtnCYLPos2
             // 
-            this.sButton1.Location = new System.Drawing.Point(240, 19);
-            this.sButton1.MinimumSize = new System.Drawing.Size(45, 22);
-            this.sButton1.Name = "sButton1";
-            this.sButton1.OffBackColor = System.Drawing.Color.Gray;
-            this.sButton1.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.sButton1.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
-            this.sButton1.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.sButton1.Size = new System.Drawing.Size(83, 38);
-            this.sButton1.TabIndex = 0;
-            this.sButton1.UseVisualStyleBackColor = true;
+            this.sBtnCYLPos2.Location = new System.Drawing.Point(240, 19);
+            this.sBtnCYLPos2.MinimumSize = new System.Drawing.Size(45, 22);
+            this.sBtnCYLPos2.Name = "sBtnCYLPos2";
+            this.sBtnCYLPos2.OffBackColor = System.Drawing.Color.Gray;
+            this.sBtnCYLPos2.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.sBtnCYLPos2.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
+            this.sBtnCYLPos2.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.sBtnCYLPos2.Size = new System.Drawing.Size(83, 38);
+            this.sBtnCYLPos2.TabIndex = 0;
+            this.sBtnCYLPos2.UseVisualStyleBackColor = true;
+            this.sBtnCYLPos2.CheckedChanged += new System.EventHandler(this.sBtnCYLPos2_CheckedChanged);
             // 
-            // sButton3
+            // sBtnCYLKeepCapper
             // 
-            this.sButton3.Location = new System.Drawing.Point(240, 19);
-            this.sButton3.MinimumSize = new System.Drawing.Size(45, 22);
-            this.sButton3.Name = "sButton3";
-            this.sButton3.OffBackColor = System.Drawing.Color.Gray;
-            this.sButton3.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.sButton3.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
-            this.sButton3.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.sButton3.Size = new System.Drawing.Size(83, 38);
-            this.sButton3.TabIndex = 0;
-            this.sButton3.UseVisualStyleBackColor = true;
+            this.sBtnCYLKeepCapper.Location = new System.Drawing.Point(240, 19);
+            this.sBtnCYLKeepCapper.MinimumSize = new System.Drawing.Size(45, 22);
+            this.sBtnCYLKeepCapper.Name = "sBtnCYLKeepCapper";
+            this.sBtnCYLKeepCapper.OffBackColor = System.Drawing.Color.Gray;
+            this.sBtnCYLKeepCapper.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.sBtnCYLKeepCapper.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
+            this.sBtnCYLKeepCapper.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.sBtnCYLKeepCapper.Size = new System.Drawing.Size(83, 38);
+            this.sBtnCYLKeepCapper.TabIndex = 0;
+            this.sBtnCYLKeepCapper.UseVisualStyleBackColor = true;
+            this.sBtnCYLKeepCapper.CheckedChanged += new System.EventHandler(this.sBtnCYLKeepCapper_CheckedChanged);
             // 
-            // sButton5
+            // sBtnCYLPos3
             // 
-            this.sButton5.Location = new System.Drawing.Point(240, 19);
-            this.sButton5.MinimumSize = new System.Drawing.Size(45, 22);
-            this.sButton5.Name = "sButton5";
-            this.sButton5.OffBackColor = System.Drawing.Color.Gray;
-            this.sButton5.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.sButton5.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
-            this.sButton5.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.sButton5.Size = new System.Drawing.Size(83, 38);
-            this.sButton5.TabIndex = 0;
-            this.sButton5.UseVisualStyleBackColor = true;
+            this.sBtnCYLPos3.Location = new System.Drawing.Point(240, 19);
+            this.sBtnCYLPos3.MinimumSize = new System.Drawing.Size(45, 22);
+            this.sBtnCYLPos3.Name = "sBtnCYLPos3";
+            this.sBtnCYLPos3.OffBackColor = System.Drawing.Color.Gray;
+            this.sBtnCYLPos3.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.sBtnCYLPos3.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
+            this.sBtnCYLPos3.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.sBtnCYLPos3.Size = new System.Drawing.Size(83, 38);
+            this.sBtnCYLPos3.TabIndex = 0;
+            this.sBtnCYLPos3.UseVisualStyleBackColor = true;
+            this.sBtnCYLPos3.CheckedChanged += new System.EventHandler(this.sBtnCYLPos3_CheckedChanged);
             // 
-            // sButton6
+            // sBtnKeepBottle
             // 
-            this.sButton6.Location = new System.Drawing.Point(240, 19);
-            this.sButton6.MinimumSize = new System.Drawing.Size(45, 22);
-            this.sButton6.Name = "sButton6";
-            this.sButton6.OffBackColor = System.Drawing.Color.Gray;
-            this.sButton6.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.sButton6.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
-            this.sButton6.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.sButton6.Size = new System.Drawing.Size(83, 38);
-            this.sButton6.TabIndex = 0;
-            this.sButton6.UseVisualStyleBackColor = true;
+            this.sBtnKeepBottle.Location = new System.Drawing.Point(240, 19);
+            this.sBtnKeepBottle.MinimumSize = new System.Drawing.Size(45, 22);
+            this.sBtnKeepBottle.Name = "sBtnKeepBottle";
+            this.sBtnKeepBottle.OffBackColor = System.Drawing.Color.Gray;
+            this.sBtnKeepBottle.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.sBtnKeepBottle.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
+            this.sBtnKeepBottle.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.sBtnKeepBottle.Size = new System.Drawing.Size(83, 38);
+            this.sBtnKeepBottle.TabIndex = 0;
+            this.sBtnKeepBottle.UseVisualStyleBackColor = true;
+            this.sBtnKeepBottle.CheckedChanged += new System.EventHandler(this.sBtnKeepBottle_CheckedChanged);
             // 
-            // sButton7
+            // sBtnCYLPos1
             // 
-            this.sButton7.Location = new System.Drawing.Point(240, 19);
-            this.sButton7.MinimumSize = new System.Drawing.Size(45, 22);
-            this.sButton7.Name = "sButton7";
-            this.sButton7.OffBackColor = System.Drawing.Color.Gray;
-            this.sButton7.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.sButton7.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
-            this.sButton7.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.sButton7.Size = new System.Drawing.Size(83, 38);
-            this.sButton7.TabIndex = 0;
-            this.sButton7.UseVisualStyleBackColor = true;
+            this.sBtnCYLPos1.Location = new System.Drawing.Point(240, 19);
+            this.sBtnCYLPos1.MinimumSize = new System.Drawing.Size(45, 22);
+            this.sBtnCYLPos1.Name = "sBtnCYLPos1";
+            this.sBtnCYLPos1.OffBackColor = System.Drawing.Color.Gray;
+            this.sBtnCYLPos1.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.sBtnCYLPos1.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
+            this.sBtnCYLPos1.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.sBtnCYLPos1.Size = new System.Drawing.Size(83, 38);
+            this.sBtnCYLPos1.TabIndex = 0;
+            this.sBtnCYLPos1.UseVisualStyleBackColor = true;
+            this.sBtnCYLPos1.CheckedChanged += new System.EventHandler(this.sBtnCYLPos1_CheckedChanged);
             // 
-            // sButton2
+            // sBtnRunConv
             // 
-            this.sButton2.Location = new System.Drawing.Point(240, 19);
-            this.sButton2.MinimumSize = new System.Drawing.Size(45, 22);
-            this.sButton2.Name = "sButton2";
-            this.sButton2.OffBackColor = System.Drawing.Color.Gray;
-            this.sButton2.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.sButton2.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
-            this.sButton2.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.sButton2.Size = new System.Drawing.Size(83, 38);
-            this.sButton2.TabIndex = 0;
-            this.sButton2.UseVisualStyleBackColor = true;
-            this.sButton2.CheckedChanged += new System.EventHandler(this.sButton2_CheckedChanged);
+            this.sBtnRunConv.Location = new System.Drawing.Point(240, 19);
+            this.sBtnRunConv.MinimumSize = new System.Drawing.Size(45, 22);
+            this.sBtnRunConv.Name = "sBtnRunConv";
+            this.sBtnRunConv.OffBackColor = System.Drawing.Color.Gray;
+            this.sBtnRunConv.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.sBtnRunConv.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
+            this.sBtnRunConv.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.sBtnRunConv.Size = new System.Drawing.Size(83, 38);
+            this.sBtnRunConv.TabIndex = 0;
+            this.sBtnRunConv.UseVisualStyleBackColor = true;
+            this.sBtnRunConv.CheckedChanged += new System.EventHandler(this.sBtnRunConv_CheckedChanged);
+            this.sBtnRunConv.CheckStateChanged += new System.EventHandler(this.sBtnRunConv_CheckedChanged);
             // 
-            // sButton4
+            // sBtnCYLBlockBottle
             // 
-            this.sButton4.Location = new System.Drawing.Point(240, 19);
-            this.sButton4.MinimumSize = new System.Drawing.Size(45, 22);
-            this.sButton4.Name = "sButton4";
-            this.sButton4.OffBackColor = System.Drawing.Color.Gray;
-            this.sButton4.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.sButton4.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
-            this.sButton4.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.sButton4.Size = new System.Drawing.Size(83, 38);
-            this.sButton4.TabIndex = 0;
-            this.sButton4.UseVisualStyleBackColor = true;
+            this.sBtnCYLBlockBottle.Location = new System.Drawing.Point(240, 19);
+            this.sBtnCYLBlockBottle.MinimumSize = new System.Drawing.Size(45, 22);
+            this.sBtnCYLBlockBottle.Name = "sBtnCYLBlockBottle";
+            this.sBtnCYLBlockBottle.OffBackColor = System.Drawing.Color.Gray;
+            this.sBtnCYLBlockBottle.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.sBtnCYLBlockBottle.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(89)))), ((int)(((byte)(148)))));
+            this.sBtnCYLBlockBottle.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.sBtnCYLBlockBottle.Size = new System.Drawing.Size(83, 38);
+            this.sBtnCYLBlockBottle.TabIndex = 0;
+            this.sBtnCYLBlockBottle.UseVisualStyleBackColor = true;
+            this.sBtnCYLBlockBottle.CheckedChanged += new System.EventHandler(this.sBtnCYLBlockBottle_CheckedChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(83, 64);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(147, 22);
+            this.textBox1.TabIndex = 2;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(237, 67);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(23, 16);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "Hz";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(244, 67);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(23, 16);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Hz";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(90, 64);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(147, 22);
+            this.textBox2.TabIndex = 4;
             // 
             // FormManual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1181, 792);
+            this.ClientSize = new System.Drawing.Size(1181, 622);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
@@ -427,6 +476,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
             this.Name = "FormManual";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manual Screen";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -457,33 +507,37 @@
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private Styling_Toggle_Button.SButton sButton2;
+        private Styling_Toggle_Button.SButton sBtnRunConv;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
-        private Styling_Toggle_Button.SButton sButton3;
+        private Styling_Toggle_Button.SButton sBtnCYLKeepCapper;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label4;
-        private Styling_Toggle_Button.SButton sButton4;
+        private Styling_Toggle_Button.SButton sBtnCYLBlockBottle;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label6;
-        private Styling_Toggle_Button.SButton sButton6;
+        private Styling_Toggle_Button.SButton sBtnKeepBottle;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private Styling_Toggle_Button.SButton sButton1;
+        private Styling_Toggle_Button.SButton sBtnCYLPos2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label5;
-        private Styling_Toggle_Button.SButton sButton5;
+        private Styling_Toggle_Button.SButton sBtnCYLPos3;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label7;
-        private Styling_Toggle_Button.SButton sButton7;
+        private Styling_Toggle_Button.SButton sBtnCYLPos1;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label8;
-        private Styling_Toggle_Button.SButton sButton8;
+        private Styling_Toggle_Button.SButton sBtnCYLPressCapper;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label9;
-        private Styling_Toggle_Button.SButton sButton9;
+        private Styling_Toggle_Button.SButton sBtnCYLRejectBottle;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label10;
-        private Styling_Toggle_Button.SButton sButton10;
+        private Styling_Toggle_Button.SButton sBtnRunRotary;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

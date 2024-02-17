@@ -16,7 +16,7 @@ namespace Learn_0801_24
     {
         DateTime date = DateTime.Now;
         Timer Timer_form1 = new Timer();
-        
+        int Time_form1_Update = 1;
         private Button currentButton;
         private Form activeForm;
         private ShareFunction shareFunction = new ShareFunction();
@@ -24,19 +24,19 @@ namespace Learn_0801_24
         {
             Timer_form1.Start();
             Timer_form1.Interval = 1;
-            //Timer_form1.Tick += Timer_form1_Tick;
+            Timer_form1.Tick += Timer_form1_Tick;
             InitializeComponent();
-            //  random = new Random();
+          //  random = new Random();
             //btnCloseChildForm.Visible = false;
-            this.Text = string.Empty;
+            this.Text=string.Empty;
             this.ControlBox = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             shareFunction._panelMenu = this.panelMenu;
         }
-
+        
         private Color SelectThemeColor()
         {
-
+            
             return Color.FromArgb(26, 59, 74);
         }
         public void ActivateButton(object btnSender)
@@ -72,7 +72,7 @@ namespace Learn_0801_24
                 {
                     previousBtn.BackColor = Color.FromArgb(26, 59, 74);
                     previousBtn.ForeColor = Color.Gainsboro;
-                    previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif",12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
             }
         }
@@ -89,7 +89,7 @@ namespace Learn_0801_24
             childform.Dock = DockStyle.Fill;
             this.panelDesktopPanel.Controls.Add(childform);
             this.panelDesktopPanel.Tag = childform;
-
+ 
             childform.BringToFront();
             childform.Show();
             lbTitle.Text = childform.Text;
@@ -101,12 +101,9 @@ namespace Learn_0801_24
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Timer_form1.Start();
-            Timer_form1.Interval = 1;
-            Timer_form1.Tick += Timer_form1_Tick;
             timer.Interval = Time_Update;
             timer.Start();
-            // timer.Tick += timer_Tick;
+           // timer.Tick += timer1_Tick;
             if (_Plc.Open() == ErrorCode.NoError)
             {
                 Timer_Connect_Plc.Enabled = true;
@@ -117,31 +114,12 @@ namespace Learn_0801_24
             else
                 MessageBox.Show("Kết nối không thành công với PLC");
         }
-
-        private void Timer_form1_Tick(object sender, EventArgs e)
-        {
-            if (_Plc.IsConnected)
-            {
-                //ghi thoi gian xuong plc
-                int plc_year = date.Year;
-                int plc_month = date.Month;
-                int plc_day = date.Day;
-                int plc_hour = date.Hour;
-                int plc_minute = date.Minute;
-                int plc_second = date.Second;
-                //thanh ghi luu trữ thời gian
-                _Plc.Write("DB25.DBW0.0", plc_year);
-                _Plc.Write("DB25.DBB2.0", plc_month);
-                _Plc.Write("DB25.DBB3.0", plc_day);
-                _Plc.Write("DB25.DBB5.0", plc_hour);
-                _Plc.Write("DB25.DBB6.0", plc_minute);
-                _Plc.Write("DB25.DBB7.0", plc_second);
-            }
-        }
+      
 
 
 
-                private void btnMainScreen_Click(object sender, EventArgs e)
+
+        private void btnMainScreen_Click(object sender, EventArgs e)
         {
             var formMain = new Forms.FormMain();
             formMain._plc = _Plc;
@@ -154,18 +132,18 @@ namespace Learn_0801_24
             var formMain = new Forms.FormManual();
             formMain._plc = _Plc;
             OpenchildForm(formMain, sender);
-
+          
         }
 
         private void btnAlarm_Click(object sender, EventArgs e)
         {
-
+            
             OpenchildForm(new Forms.FormAlarm(), sender);
         }
 
         private void btnSetting_Click(object sender, EventArgs e)
         {
-            var formSetting = new Forms.FormSetting();
+            var formSetting= new Forms.FormSetting();
             formSetting._plc = _Plc;
             OpenchildForm(formSetting, sender);
 
@@ -187,7 +165,7 @@ namespace Learn_0801_24
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            if (activeForm != null)
+            if(activeForm != null)
             {
                 reset();
             }
@@ -219,8 +197,8 @@ namespace Learn_0801_24
 
         private void btnMaximize_Click(object sender, EventArgs e)
         {
-            if (WindowState == FormWindowState.Normal)
-                this.WindowState = FormWindowState.Maximized;
+            if(WindowState== FormWindowState.Normal)
+                this.WindowState= FormWindowState.Maximized;
             else
                 this.WindowState = FormWindowState.Normal;
         }
@@ -236,9 +214,9 @@ namespace Learn_0801_24
             FormServo._plc = _Plc;
             OpenchildForm(FormServo, sender);
             //OpenchildForm(new Forms.FormServo(), sender);
-
+            
         }
 
-
+        
     }
 }
